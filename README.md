@@ -1,6 +1,6 @@
 # GCP Project Deletion Tracker
 
-Projects delete in Google Cloud Platform (GCP) are given a grace period of 30 days before they're actually deleted. However, besides the email sent notifying when the project will be deleted there is no central location to manage that, especially when you're working with lots projects that are created and deleted.
+Projects deleted in Google Cloud Platform (GCP) are given a grace period of 30 days before they're actually deleted. However, besides the email sent notifying when the project will be deleted there is no central location to manage that, especially when you're working with lots projects that are created and deleted.
 
 This Google Script helps by parsing the email notification sent to the admin account and puts the information extracted in Google Sheets.
 
@@ -55,6 +55,8 @@ Create a new Google Sheet and format it as such:
 * Cell B3: Deleted On
 * Cell C3: Shutdown By
 * Cell D3: TTL
+
+*Note*: you can copy this [template](https://docs.google.com/spreadsheets/u/1/d/1743VMziJoqlES2ylG88L8prlwC6VS8Dy6wmzt5SJl3g/copy)
 
 See the example below:
 
